@@ -4,6 +4,7 @@
   "description": "Javascript partial implementation of Gentics Mesh v2 API",
   "main": "dist/index.js",
   "scripts": {
+    "coverage": "nyc npm test",
     "test": "mocha \"src/**/*.unit.test.js\""
   },
   "repository": {
@@ -23,12 +24,18 @@
   },
   "homepage": "https://github.com/Quoin/mesh-client#readme",
   "devDependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/register": "^7.10.4",
-    "chai": "^4.2.0",
-    "dirty-chai": "^2.0.1",
+    "@babel/core": "~7.10.5",
+    "@babel/preset-env": "~7.10.4",
+    "@babel/register": "~7.10.5",
+    "@istanbuljs/nyc-config-babel": "~3.0.0",
+    "babel-plugin-istanbul": "~6.0.0",
+    "chai": "~4.2.0",
+    "dirty-chai": "~2.0.1",
     "mocha": "~8.0.1",
-    "source-map-support": "^0.5.19"
+    "nyc": "~15.1.0",
+    "source-map-support": "~0.5.19"
+  },
+  "dependencies": {
+    "babel-regenerator-runtime": "~6.5.0"
   }
 }
