@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "extends": [
+    "airbnb-base"
+  ],
+  "overrides": [{
+    "files": [ "*.test.js" ],
+    "env": {
+      "mocha": true
+    },
+    "globals": {
+      "expect": "readonly"
+    }
+  }]
+}
